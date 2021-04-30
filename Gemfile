@@ -13,11 +13,18 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.4.1'
-
 gem 'bootsnap', '>= 1.1.0', require: false
+
+# image uploads to Amazon S3
+gem 'carrierwave'
+gem 'fog', "~> 1.37.0"
+
+# image resizing
+gem 'mini_magick'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "figaro"
 end
 
 group :development do
